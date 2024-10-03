@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>بازی حافظه</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer type="module"></script>
   </head>
   <body>
-        
+    <div class="container">
+      <form>
+        <select name="choice" class="select_cells_number">
+          <option value="16" selected></option>
+          <option value="36" selected></option>
+          <option value="64" selected></option>
+        </select>
+      </form>
+      <div class="playGround"></div>
+      <div class="modal">
+        <div class="modal_content">
+          <h2 class="modal_heading">بازی تمومه</h2>
+          <div class="modal_time">
+            <span>زمان سپری شده: </span>
+          </div>
+          <h3 class="modal_text">
+            تعداد اشتباهات : <span class="wrong">5</span>
+          </h3>
+          <button class="btn modalbtn">شروع دوباره</button>
+        </div>
+      </div>
+      <div class="features">
+        <div class="timer"><span>00</span>دقیه <span>00</span>ثانیه</div>
+        <button class="btn restart_btn">بازی جدید</button>
+      </div>
+    </div>
   </body>
 </html>
