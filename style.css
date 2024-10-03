@@ -1,1 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
+
+:root {
+  --backgrund: #f7eedd;
+  --white: #fff;
+  --light_gray: #555;
+  --gray: #222;
+  --blue: #119ec2;
+  --color_one: rgba(115, 118, 115, 0.604);
+  --color_two: rgba(255, 255, 255, 0.863);
+  --grid_cells: 6;
+  --gap: 1rem;
+  --time: 0.5s;
+}
+
+html {
+  font-size: 62.5%;
+  direction: rtl;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.container {
+  height: 100svh;
+  display: grid;
+  place-items: center;
+}
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.select_cells_number {
+  width: 6rem;
+  text-align: center;
+}
+.playground {
+  background-color: var(--backgrund);
+  width: 90vmin;
+  height: 90vmin;
+  border-radius: var(--gap);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color_one);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: var(--gap);
+  width: 30rem;
+  aspect-ratio: 1;
+  background-color: var(--color_two);
+  border-radius: var(--gap);
+}
+
+.modal_heading {
+  font-size: 4rem;
+  color: var(--light_gray);
+  margin-bottom: var(--gap);
+}
+
+.modal_time {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+}
+
+.modal_time > span {
+  font-size: 1.8rem;
+  color: var(--gray);
+}
+
+.modal_text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--light_gray);
+}
+
+.btn {
+  box-sizing: content-box;
+  padding: 0.5rem 1rem;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.features .restart_btn {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.timer {
+  font-size: 1.3rem;
+  color: var(--blue);
+}
+
+.timer span {
+  font-size: 1.6rem;
+  margin: 0.7rem;
+}
