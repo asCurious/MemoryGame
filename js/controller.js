@@ -52,6 +52,7 @@ class Controller {
       this.startClock = true;
       this.stopTime();
       modal.style.cssText = "visibility: visible; opacity: 1";
+      wrong.textContent = attempts.wrong;
       const timerClone = timer.cloneNode(true);
       modalTime.append(timerClone);
       modalBtn.onclick = () => location.reload();
