@@ -69,19 +69,6 @@
     url("fonts/woff2/IRANYekanXFaNum-Heavy.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: IRANYekanXFaNum;
-  font-style: normal;
-  font-weight: bold;
-  src: url("fonts/woff/IRANYekanXFaNum-Bold.woff") format("woff"),
-    url("fonts/woff2/IRANYekanXFaNum-Bold.woff2") format("woff2");
-}
 
-@font-face {
-  font-family: IRANYekanXFaNum;
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/woff/IRANYekanXFaNum-Regular.woff") format("woff"),
-    url("fonts/woff2/IRANYekanXFaNum-Regular.woff2") format("woff2");
-}
-  
+
+
