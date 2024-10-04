@@ -45,8 +45,52 @@ html {
   width: 90vmin;
   height: 90vmin;
   border-radius: var(--gap);
+  display: grid;
+  gap: var(--gap);
+  padding: var(--gap);
 }
 
+.card {
+  background-color: var(--white);
+  box-shadow: 0 0 0.3rem #eee;
+  display: grid;
+  place-items: center;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  perspective: 100rem;
+  transition: transform var(--time) var(--time) linear;
+}
+
+.card.change {
+  pointer-events: none;
+  transform: rotateY(0);
+  transition: transform var(--time) var(--time) linear;
+}
+
+.card.pause {
+  pointer-events: none;
+}
+
+.card.stop {
+  pointer-events: none;
+}
+
+.card.change img {
+  transform: rotateY(0);
+  transition: transform var(--time) linear;
+}
+
+.card img {
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  background-color: var(--white);
+  border-radius: inherit;
+  transition: transform var(--time) var(--time) linear;
+  backface-visibility: hidden;
+}
 .modal {
   position: fixed;
   inset: 0;
@@ -55,6 +99,7 @@ html {
   place-items: center;
   opacity: 0;
   visibility: hidden;
+  transition: opacity var(--time) 1s;
 }
 
 .modal_content {
@@ -92,6 +137,12 @@ html {
   color: var(--light_gray);
 }
 
+.wrong {
+  display: inline-block;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+}
+
 .btn {
   box-sizing: content-box;
   padding: 0.5rem 1rem;
@@ -102,6 +153,12 @@ html {
   color: var(--white);
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.yes_btn,
+.cancel_btn {
+  margin-inline: 0.5rem;
+  width: 7rem;
 }
 
 .features {
