@@ -1,4 +1,4 @@
-import Elements from "elements.js";
+import Elements from "./elements.js";
 class Controller {
   constructor(cardsNumber) {
     this.Elements = new Elements(cardsNumber);
