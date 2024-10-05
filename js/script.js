@@ -1,4 +1,4 @@
-import Controller from "./controller.js";
+import Controller from "controller.js";
 
 const selectCellsNumber = document.querySelector(".select_cells_number");
 const game = new Controller(selectCellsNumber.value);

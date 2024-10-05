@@ -2,19 +2,19 @@
   font-family: IRANYekanXFaNum;
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/woff/IRANYekanXFaNum-Regular.woff") format("woff");
+  src: url("fonts/woff/IRANYekanXFaNum-Regular.woff") format("woff");
 }
 @font-face {
   font-family: IRANYekanXFaNum;
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/woff/IRANYekanXFaNum-Medium.woff") format("woff");
+  src: url("fonts/woff/IRANYekanXFaNum-Medium.woff") format("woff");
 }
 @font-face {
   font-family: IRANYekanXFaNum;
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/woff/IRANYekanXFaNum-Bold.woff") format("woff");
+  src: url("fonts/woff/IRANYekanXFaNum-Bold.woff") format("woff");
 }
 :root {
   --backgrund: #f7eedd;
