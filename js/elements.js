@@ -47,7 +47,7 @@ class Elements {
       card.classList.add("card");
       card.setAttribute("data-index", index);
       const img = document.createElement("img");
-      img.src = `/image/pic-${index}.png`;
+      img.src = `/MemoryGame/image/pic-${index}.png`;
       card.append(img);
       this.playground.append(card);
     });
